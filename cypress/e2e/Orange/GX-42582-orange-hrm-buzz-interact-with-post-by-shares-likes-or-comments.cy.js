@@ -1,5 +1,6 @@
 import { faker } from '@faker-js/faker';
 import { buzzPage, loginPage } from '../../support/pages/Orange/GX-42582interactWithPost.page';
+
 const orange = Cypress.env('orange');
 const { baseUrl, AdminUser } = orange;
 const randomComment = faker.lorem.sentences(2);

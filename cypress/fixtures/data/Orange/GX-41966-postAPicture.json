@@ -1,0 +1,11 @@
+{
+	"path": {
+		"imagePng": "cypress/fixtures/images/upexlogo.png",
+		"imageGif": "cypress/fixtures/images/upexgalaxy.gif"
+	},
+
+	"messages": {
+		"succes": "SuccessSuccessfully Saved×",
+		"maximumAllowedSize": "Maximum allowed file size is 2MB"
+	}
+}
