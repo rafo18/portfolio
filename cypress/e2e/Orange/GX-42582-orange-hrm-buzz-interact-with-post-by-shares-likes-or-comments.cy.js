@@ -25,7 +25,7 @@ describe('GX-42582-orange-hrm-buzz-interact-with-post-by-shares-likes-or-comment
 		buzzPage.shareAPost({
 			comment: randomComment,
 		});
-		buzzPage.get.postSucces().should('exist').and('have.text', 'SuccessSuccessfully Saved');
+		buzzPage.get.postSucces().should('be.visible').and('have.text', 'ExitoGuardado correctamente×');
 		buzzPage.get.postContainer().should('contain.text', randomComment);
 	});
 	it('42583 | TC2: Validar la funcionalidad del boton like.', () => {

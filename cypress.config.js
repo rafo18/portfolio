@@ -24,8 +24,8 @@ module.exports = defineConfig({
 		swagLabs: {
 			baseUrl:'https://www.saucedemo.com',
 			AdminUser: {
-				username: 'Admin',
-				password:'admin123'
+				username: 'standard_user',
+				password:'secret_sauce'
 			}
 		},
 		toolsQa: {

@@ -16,7 +16,7 @@ class BuzzPage {
 	get = {
 		postPopUp: () => cy.get('[role=document]'),
 		popUpShareButton: () => cy.get('button[type=submit]').eq(1),
-		postSucces: () => cy.get('div[class^=oxd-toast-content]', { timeout: 15000 }),
+		postSucces: () => cy.get('[class*="oxd-toast--success"]', { timeout: 15000 }),
 		postContainer: () => cy.get('[class ^= oxd-sheet]').eq(1),
 		postFooter: () => cy.get('[class=orangehrm-buzz-post-footer]').first(),
 		shareButton: () => cy.get('[class$=bi-share-fill]').first(),

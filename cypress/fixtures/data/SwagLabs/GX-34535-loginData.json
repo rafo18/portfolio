@@ -1,0 +1,18 @@
+{
+	"userName": {
+		"valid": "standard_user",
+		"blocked": "locked_out_user",
+		"problem": "problem_user",
+		"glitched": "performance_glitch_user",
+		"invalid": "abc123"
+	},
+
+	"password": [
+		{
+			"valid": "secret_sauce"
+		},
+		{
+			"invalid": "abc123"
+		}
+	]
+}
