@@ -1,4 +1,4 @@
-const { defineConfig } = require("cypress");
+import { defineConfig } from 'cypress';
 
 module.exports = defineConfig({
   e2e: {
@@ -7,7 +7,7 @@ module.exports = defineConfig({
     },
   },
   retries:0,
-  video:false,
+  video:false
   env: {
     orange:{
       baseUrl:'https://opensource-demo.orangehrmlive.com/web/index.php',
