@@ -6,11 +6,6 @@ Este proyecto en mi portafolio demuestra mis habilidades en automatización de p
 
 En este repositorio, encontrarás una colección de pruebas desarrolladas en Cypress que cubren diferentes SUT, destacando la capacidad de crear tests robustos y eficientes tanto para interfaces de usuario como para API.
 
-## Comenzando 🚀
-
-_Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
-
-
 ### Pre-requisitos 📋
 
 * node js
