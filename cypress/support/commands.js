@@ -7,7 +7,8 @@
 // commands please read more here:
 // https://on.cypress.io/custom-commands
 // ***********************************************
-//
+import '@4tw/cypress-drag-drop';
+   
 //
 // -- This is a parent command --
 // Cypress.Commands.add('login', (email, password) => { ... })
