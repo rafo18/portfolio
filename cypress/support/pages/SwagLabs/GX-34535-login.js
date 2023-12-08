@@ -14,15 +14,15 @@ class login {
 		userError: () => cy.get('.error-message-container'),
 	};
 
-	fillUsername(val1) {
-		this.get.username().clear().type(val1);
-		this.get.password().clear();
+	fillUsername({username}) {
+		this.get.username().clear().should('be.empty').type(username);
+		this.get.password().clear().should('be.empty');
 		this.get.button().click();
 	}
 
-	fillPassword(val1) {
-		this.get.username().clear();
-		this.get.password().clear().type(val1);
+	fillPassword({password}) {
+		this.get.username().clear().should('be.empty');
+		this.get.password().clear().should('be.empty').type(password);
 		this.get.button().click();
 	}
 
@@ -32,9 +32,9 @@ class login {
 		this.get.button().click();
 	}
 
-	fillLogin({ username: val1, password: val2 }) {
-		this.get.username().clear().type(val1);
-		this.get.password().clear().type(val2);
+	Login({ username, password }) {
+		this.get.username().clear().should('be.empty').type(username);
+		this.get.password().clear().should('be.empty').type(password);
 		this.get.button().click();
 	}
 }

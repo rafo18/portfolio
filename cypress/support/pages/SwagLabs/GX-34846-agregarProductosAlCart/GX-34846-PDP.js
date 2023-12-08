@@ -37,4 +37,4 @@ class Pdp {
 	}
 }
 
-export const pdp = new Pdp();
+export const productDetailPage = new Pdp();

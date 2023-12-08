@@ -87,4 +87,4 @@ class Plp {
 	}
 }
 
-export const plp = new Plp();
+export const productListPage = new Plp();

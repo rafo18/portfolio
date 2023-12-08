@@ -1,5 +1,5 @@
 {
-	"userName": {
+	"username": {
 		"valid": "standard_user",
 		"blocked": "locked_out_user",
 		"problem": "problem_user",
@@ -7,12 +7,8 @@
 		"invalid": "abc123"
 	},
 
-	"password": [
-		{
-			"valid": "secret_sauce"
-		},
-		{
-			"invalid": "abc123"
-		}
-	]
+	"password": {
+		"valid": "secret_sauce",
+		"invalid": "abc123"
+	}
 }

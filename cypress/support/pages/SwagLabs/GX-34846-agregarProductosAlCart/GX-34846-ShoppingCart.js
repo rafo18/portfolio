@@ -6,4 +6,4 @@ class ShoppingCart {
 	};
 }
 
-export const shoppingCart = new ShoppingCart();
+export const shoppingCartPage = new ShoppingCart();

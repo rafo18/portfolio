@@ -1,7 +1,7 @@
 import { loginPage } from '../../support/pages/SwagLabs/GX-34846-agregarProductosAlCart/GX-34846-Login';
-import { plp } from '../../support/pages/SwagLabs/GX-34846-agregarProductosAlCart/GX-34846-PLP';
-import { pdp } from '../../support/pages/SwagLabs/GX-34846-agregarProductosAlCart/GX-34846-PDP';
-import { shoppingCart } from '../../support/pages/SwagLabs/GX-34846-agregarProductosAlCart/GX-34846-ShoppingCart';
+import { productListPage } from '../../support/pages/SwagLabs/GX-34846-agregarProductosAlCart/GX-34846-PLP';
+import { productDetailPage } from '../../support/pages/SwagLabs/GX-34846-agregarProductosAlCart/GX-34846-PDP';
+import { shoppingCartPage } from '../../support/pages/SwagLabs/GX-34846-agregarProductosAlCart/GX-34846-ShoppingCart';
 
 import { removeLogs } from '../../support/helpers/RemoveLogs';
 
@@ -18,27 +18,27 @@ describe('GX-34846-SwagLabs | SCP | Agregar producto al carrito de compras desde
 	});
 
 	it('34847 | TC1: Validar agregar producto desde el PLP', () => {
-		plp.randomCard().then(index => {
+		productListPage.randomCard().then(index => {
 			const [title, desc, price, random] = index;
-			plp.get.cartIcon().should('have.text', '1');
-			plp.get.cardBtn().eq(random).should('have.text', 'Remove');
-			plp.cartClick();
-			shoppingCart.get.title().should('have.text', title);
-			shoppingCart.get.desc().should('have.text', desc);
-			shoppingCart.get.price().should('have.text', price);
+			productListPage.get.cartIcon().should('have.text', '1');
+			productListPage.get.cardBtn().eq(random).should('have.text', 'Remove');
+			productListPage.cartClick();
+			shoppingCartPage.get.title().should('have.text', title);
+			shoppingCartPage.get.desc().should('have.text', desc);
+			shoppingCartPage.get.price().should('have.text', price);
 		});
 	});
 
 	it('34847 | TC2: Validar agregar producto desde el PDP', () => {
-		plp.clickRandomCard();
-		pdp.addToCart().then(index => {
+		productListPage.clickRandomCard();
+		productDetailPage.addToCart().then(index => {
 			const [title, desc, price] = index;
-			pdp.get.cartIcon().should('have.text', '1');
-			pdp.get.button().should('have.text', 'Remove');
-			pdp.cartClick();
-			shoppingCart.get.title().should('have.text', title);
-			shoppingCart.get.desc().should('have.text', desc);
-			shoppingCart.get.price().should('have.text', price);
+			productDetailPage.get.cartIcon().should('have.text', '1');
+			productDetailPage.get.button().should('have.text', 'Remove');
+			productDetailPage.cartClick();
+			shoppingCartPage.get.title().should('have.text', title);
+			shoppingCartPage.get.desc().should('have.text', desc);
+			shoppingCartPage.get.price().should('have.text', price);
 		});
 	});
 });
