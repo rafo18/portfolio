@@ -16,8 +16,9 @@ En este repositorio, encontrarás una colección de pruebas desarrolladas en Cyp
 1. Clonar el repositorio
 
 ```
-https://github.com/rafo18/portfolio.git
+git clone https://github.com/rafo18/portfolio.git
 ```
+
 2. Inicializar npm
 ```
 npm init
