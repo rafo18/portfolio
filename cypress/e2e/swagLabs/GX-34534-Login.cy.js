@@ -8,6 +8,8 @@ const { baseUrl, AdminUser } = swagLabs;
 describe('GX-34534 | SwagLabs | Account | Iniciar sesión y BR de Accesos', () => {
 	beforeEach(() => {
 		cy.visit(baseUrl);
+
+		
 	});
 	it('34535 | TC1: Validar iniciar sesión con datos validos.', () => {
 		loginPage.Login({ username: AdminUser.username, password:AdminUser.password });
