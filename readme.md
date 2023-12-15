@@ -14,7 +14,6 @@ En este repositorio, encontrarás una colección de pruebas desarrolladas en Cyp
 
 ### Instalación 🔧
 1. Clonar el repositorio
-
 ```
 git clone https://github.com/rafo18/portfolio.git
 ```
@@ -23,7 +22,8 @@ git clone https://github.com/rafo18/portfolio.git
 ```
 npm init
 ```
-3.Instalar Dependencias
+
+3. Instalar Dependencias
 ```
 npm install
 ```
