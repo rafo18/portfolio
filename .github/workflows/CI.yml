@@ -6,9 +6,19 @@ on:
       - main
 
 jobs:
-  hello_world:
+  CI-Rafael:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Echo the message
-        run: |
-          echo "Hola mundo"
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: install Node
+        uses: actions/setup-node@v4
+        with: 
+          node-version: 18
+      
+      - name: Instalar dependencias
+        run: npm install
+
+        
