@@ -12,6 +12,7 @@ module.exports = defineConfig({
 	
 	retries:0,
 	video:false,
+	screenshotOnRunFailure:false,
 	env: {
 		orange:{
 			baseUrl:'https://opensource-demo.orangehrmlive.com/web/index.php',

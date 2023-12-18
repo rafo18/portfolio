@@ -21,8 +21,12 @@ jobs:
       - name: Instalar dependencias
         run: npm i
 
-      - name: Run Test
-              # Editar la ruta del test 
-        run: npm run file cypress/e2e/Orange/GX-42582-orange-hrm-buzz-interact-with-post-by-shares-likes-or-comments.cy.js
+      - name: Run Test 
+        uses: cypress-io/github-action@v6
+        with:
+          browser: chrome
+          headed: true
+          # En el Spec cambiar la ruta del test a ejecutar
+          spec: cypress/e2e/Orange/GX-42582-orange-hrm-buzz-interact-with-post-by-shares-likes-or-comments.cy.js
 
         
