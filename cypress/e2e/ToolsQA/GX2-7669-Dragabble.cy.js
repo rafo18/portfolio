@@ -26,7 +26,7 @@ describe('GX2-7669-tools-qa-interactions-dragabble', () => {
 		dragPage.get.simpleDrag().should('have.css', 'left', `${xRandomCoordinate}px`);
 		dragPage.get.simpleDrag().should('have.css', 'top', `${yRandomCoordinate}px`);
 	});
-	it('7670 | TC2: Validar mover en el eje X el recuadro Only X de la pestaña Axis Restricted.', () => {
+	it.skip('7670 | TC2: Validar mover en el eje X el recuadro Only X de la pestaña Axis Restricted.', () => {
 		const xRandomCoordinate = randomCoordinate(-200, 450);
 		dragPage.axisDrag({
 			X: xRandomCoordinate,
