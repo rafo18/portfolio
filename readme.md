@@ -1,6 +1,7 @@
 # Portafolio
 
 Este proyecto en mi portafolio demuestra mis habilidades en automatización de pruebas utilizando Cypress, una herramienta potente para realizar pruebas de interfaz de usuario (UI) y de API de diversos Sistemas bajo Test (SUT).
+Cree mi CI donde se puede correr un sanity para cada test y un Regression si se solicita un Pull Request
 
 ## Descripcion del proyecto
 
