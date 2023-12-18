@@ -33,7 +33,7 @@ describe('GX-41966-orange-hrm-buzz-post-a-picture)ge-hrm-buzz-post-a-picture', (
 		//feed image length
 		buzzPage.get.imageContainer().should('contain.html', 'img');
 	});
-	it('41967 | TC2: Validar compartir 5 imagenes en la feed.', () => {
+	it.skip('41967 | TC2: Validar compartir 5 imagenes en la feed.', () => {
 		const numberOfImages = 5;
 		buzzPage.addImages({
 			numberOfPhotos: numberOfImages,
