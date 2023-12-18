@@ -27,3 +27,6 @@ npm init
 ```
 npm install
 ```
+### Status CI
+
+[![My CI](https://github.com/rafo18/portfolio/actions/workflows/CI.yml/badge.svg)](https://github.com/rafo18/portfolio/actions/workflows/CI.yml)

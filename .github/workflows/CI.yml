@@ -6,19 +6,23 @@ on:
       - main
 
 jobs:
-  CI-Rafael:
+  CI-Rafael-Sanity:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: install Node
+      - name: instalar Node
         uses: actions/setup-node@v4
         with: 
           node-version: 18
       
       - name: Instalar dependencias
-        run: npm install
+        run: npm i
+
+      - name: Run Test
+              # Editar la ruta del test 
+        run: npm run file cypress/e2e/Orange/GX-42582-orange-hrm-buzz-interact-with-post-by-shares-likes-or-comments.cy.js
 
         
