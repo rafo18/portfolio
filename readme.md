@@ -28,6 +28,11 @@ npm init
 ```
 npm install
 ```
+4. Crea tu propia rama para probar
+```
+git checkout -b nombreDeTuRama
+```
+
 ### Status CI
 
 [![My CI Regression](https://github.com/rafo18/portfolio/actions/workflows/CI-Regression.yml/badge.svg)](https://github.com/rafo18/portfolio/actions/workflows/CI-Regression.yml)
