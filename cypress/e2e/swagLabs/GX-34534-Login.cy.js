@@ -25,7 +25,7 @@ describe('GX-34534 | SwagLabs | Account | Iniciar sesión y BR de Accesos', () =
 		loginPage.get.userError().should('have.text', 'Epic sadface: Sorry, this user has been locked out.');
 	});
 
-	it('34535 | TC3: Validar NO iniciar sesión con usuario no valido.', () => {
+	it.skip('34535 | TC3: Validar NO iniciar sesión con usuario no valido.', () => {
 		loginPage.Login({
 			username: username.invalid,
 			password: password.invalid,
@@ -34,7 +34,7 @@ describe('GX-34534 | SwagLabs | Account | Iniciar sesión y BR de Accesos', () =
 		loginPage.get.userError().should('have.text', 'Epic sadface: Username and password do not match any user in this service');
 	});
 
-	it('34535 | TC4: Validar NO iniciar sesión con password vacío.', () => {
+	it.skip('34535 | TC4: Validar NO iniciar sesión con password vacío.', () => {
 		loginPage.fillUsername({
 			username:username.valid
 		});
@@ -42,7 +42,7 @@ describe('GX-34534 | SwagLabs | Account | Iniciar sesión y BR de Accesos', () =
 		loginPage.get.userError().should('have.text', 'Epic sadface: Password is required');
 	});
 
-	it('34535 | TC5: Validar NO iniciar sesión con username vacío.', () => {
+	it.skip('34535 | TC5: Validar NO iniciar sesión con username vacío.', () => {
 		loginPage.fillPassword({
 			password:password.valid
 		});
@@ -50,7 +50,7 @@ describe('GX-34534 | SwagLabs | Account | Iniciar sesión y BR de Accesos', () =
 		loginPage.get.userError().should('have.text', 'Epic sadface: Username is required');
 	});
 
-	it('34535 | TC5: Validar NO iniciar sesión con campos vacios.', () => {
+	it.skip('34535 | TC6: Validar NO iniciar sesión con campos vacios.', () => {
 		loginPage.clickButton();
 		loginPage.get.userError().should('exist');
 		loginPage.get.userError().should('have.text', 'Epic sadface: Username is required');

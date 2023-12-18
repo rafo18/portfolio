@@ -23,3 +23,5 @@ jobs:
 
       - name: Correr Regresion
         uses: cypress-io/github-action@v6
+        with:
+          browser: chrome

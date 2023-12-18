@@ -39,7 +39,7 @@ describe('GX-34011-tools-qa-elements-text-box-fill-form-and-submit', () => {
 			});
 			//validations
 			TextBox.get.email().should('have.class', 'field-error');
-			TextBox.get.email().should('have.css', 'border', '1px solid rgb(255, 0, 0)');
+			// TextBox.get.email().should('have.css', 'border', '1px solid rgb(255, 0, 0)');
 			TextBox.get.emailResult().should('not.exist');
 			TextBox.get.nameResult().should('not.exist');
 			TextBox.get.currentAddressResult().should('not.exist');

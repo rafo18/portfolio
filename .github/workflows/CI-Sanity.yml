@@ -24,7 +24,7 @@ jobs:
       - name: Run Test 
         uses: cypress-io/github-action@v6
         with:
-          browser: chrome
+          browser: electron
           headed: true
           # En el Spec cambiar la ruta del test a ejecutar
           spec: cypress/e2e/Orange/GX-41966-orange-hrm-buzz-post-a-picture.cy.js

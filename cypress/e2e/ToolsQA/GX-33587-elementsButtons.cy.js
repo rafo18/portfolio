@@ -11,7 +11,7 @@ describe('GX-33587-🪶ToolsQA | Elements | Buttons', () => {
 		cy.url().should('contain','/buttons')
 	});
 
-	it.only('33588 | TC1: Validar desplegar mensaje al hacer doble click izquierdo en el botón “Double Click Me”.', () => {
+	it('33588 | TC1: Validar desplegar mensaje al hacer doble click izquierdo en el botón “Double Click Me”.', () => {
 		elementButtonsPage.doubleClick();
 		elementButtonsPage.get.firstMessage().should('exist').and('have.text', 'You have done a double click');
 	});

@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "cypress open",
-    "file": "cypress run --browser chrome --spec"
+    "file": "cypress run --browser chrome --spec",
+    "regression": "cypress run --browser chrome"
   },
   "author": "",
   "license": "ISC",
@@ -13,7 +14,7 @@
     "@4tw/cypress-drag-drop": "2.2.5",
     "@faker-js/faker": "8.3.1",
     "@typescript-eslint/eslint-plugin": "6.13.1",
-    "cypress": "13.6.0",
+    "cypress": "12.7.0",
     "cypress-plugin-api": "2.11.1",
     "eslint-plugin-only-warn": "1.1.0",
     "prettier": "3.1.0"
