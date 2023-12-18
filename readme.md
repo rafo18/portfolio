@@ -29,4 +29,4 @@ npm install
 ```
 ### Status CI
 
-[![My CI](https://github.com/rafo18/portfolio/actions/workflows/CI.yml/badge.svg)](https://github.com/rafo18/portfolio/actions/workflows/CI.yml)
+[![My CI Regression](https://github.com/rafo18/portfolio/actions/workflows/CI-Regression.yml/badge.svg)](https://github.com/rafo18/portfolio/actions/workflows/CI-Regression.yml)
