@@ -53,7 +53,7 @@ describe('GX-34534 | SwagLabs | Account | Iniciar sesión y BR de Accesos', () =
 	it.skip('34535 | TC6: Validar NO iniciar sesión con campos vacios.', () => {
 		loginPage.clickButton();
 		loginPage.get.userError().should('exist');
-		loginPage.get.userError().should('have.text', 'Epic sadface: Username is required');
+		loginPage.get.userError().should('have.text', 'Epic sadface: Username is required')
 	});
 
 		
