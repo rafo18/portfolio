@@ -27,6 +27,6 @@ jobs:
           browser: chrome
           headed: true
           # En el Spec cambiar la ruta del test a ejecutar
-          spec: cypress/e2e/Orange/GX-42582-orange-hrm-buzz-interact-with-post-by-shares-likes-or-comments.cy.js
+          spec: cypress/e2e/Orange/GX-41966-orange-hrm-buzz-post-a-picture.cy.js
 
         

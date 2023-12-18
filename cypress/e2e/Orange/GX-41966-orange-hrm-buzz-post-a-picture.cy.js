@@ -54,7 +54,7 @@ describe('GX-41966-orange-hrm-buzz-post-a-picture)ge-hrm-buzz-post-a-picture', (
 			numberOfPhotos: numberOfImages,
 			path: data.path.imageGif,
 		});
-		buzzPage.get.alertContent().should('be.visible').and('have.text', data.messages.maximumAllowedSize);
+		buzzPage.get.alertContent().should('be.visible').and('have.text', data.messages.maximumAllowedSize)
 	});
 });
 
