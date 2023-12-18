@@ -1,0 +1,25 @@
+name: My CI Regression 
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  CI-Rafael-Sanity:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: instalar Node
+        uses: actions/setup-node@v4
+        with: 
+          node-version: 18
+      
+      - name: Instalar dependencias
+        run: npm i
+
+      - name: Correr Regresion
+        uses: cypress-io/github-action@v6

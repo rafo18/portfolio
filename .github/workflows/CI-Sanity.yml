@@ -1,8 +1,8 @@
-name: My CI
+name: My CI Sanity
 
 on:
   push:
-    branches:
+    branches-ignore:
       - main
 
 jobs:
