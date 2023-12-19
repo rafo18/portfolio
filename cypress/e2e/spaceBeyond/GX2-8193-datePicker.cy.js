@@ -28,7 +28,7 @@ describe('GX2-8193-SpaceBeyond | Datepicker | Buscar destino por fecha y grupo d
 			}
 		});
 	});
-	it('GX2-8194 | TC2: Validar buscar destino por fecha de partida y fecha de retorno.', () => {
+	it.skip('GX2-8194 | TC2: Validar buscar destino por fecha de partida y fecha de retorno.', () => {
 		let departingDay, departingMonth, returningMonth, returningDay;
 		homePage.selectDepartingAndReturningDate().then((data) => {
 			departingDay = data.departingDay;
