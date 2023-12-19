@@ -25,3 +25,11 @@ jobs:
         uses: cypress-io/github-action@v6
         with:
           browser: chrome
+
+      - name: Slack Notification
+        uses: rtCamp/action-slack-notify@v2
+        env:
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+          SLACK_USERNAME: Messi
+          SLACK_MESSAGE: Regression Test
+          SLACK_COLOR: ${{ job.status }}
