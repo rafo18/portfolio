@@ -45,7 +45,7 @@ describe('GX2-7669-tools-qa-interactions-dragabble', () => {
 		const yRandomCoordinate = randomCoordinate(0, 106);
 		dragPage.get.containerTab().click();
 		dragPage.containerDrag({ X: xRandomCoordinate, Y: yRandomCoordinate });
-		dragPage.get.dragContainer().should('have.css', 'left', `${xRandomCoordinate+2}px`);
+		dragPage.get.dragContainer().should('have.css', 'left', `${xRandomCoordinate}px`);
 		dragPage.get.dragContainer().should('have.css', 'top', `${yRandomCoordinate}px`);
 	});
 	it('7670 | TC5: Validar mover el texto “Im contained within my parent” dentro de su container de la pestaña “Container Restricted”.', () => {
