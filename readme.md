@@ -32,6 +32,8 @@ npm install
 ```
 git checkout -b nombreDeTuRama
 ```
+5. Edita el archivo CI-sanity con el path de tu test
+
 
 ### Status CI
 
