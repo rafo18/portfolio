@@ -24,7 +24,7 @@ jobs:
       - name: Run Test 
         uses: cypress-io/github-action@v6
         with:
-          browser: electron
+          browser: chrome
           headed: true
           # En el Spec cambiar la ruta del test a ejecutar
           spec: cypress/e2e/ToolsQA/GX2-7669-Dragabble.cy.js
