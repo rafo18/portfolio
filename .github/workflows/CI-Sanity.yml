@@ -27,7 +27,7 @@ jobs:
           browser: chrome
           headed: true
           # En el Spec cambiar la ruta del test a ejecutar
-          spec: cypress/e2e/ToolsQA/GX2-7669-Dragabble.cy.js
+          spec: cypress/e2e/trello/GX2-10188-moverYArchivar.cy.js
           
       - name: Slack Notification
         if: always()
