@@ -1,7 +1,7 @@
 name: My CI Regression 
 
 on:
-  push:
+  pull_request:
     branches:
       - main
 
