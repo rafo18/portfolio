@@ -1,3 +1,6 @@
+
+[![My CI Regression](https://github.com/rafo18/portfolio/actions/workflows/CI-Regression.yml/badge.svg)](https://github.com/rafo18/portfolio/actions/workflows/CI-Regression.yml)
+
 # Portafolio
 
 Este proyecto en mi portafolio demuestra mis habilidades en automatización de pruebas utilizando Cypress, una herramienta potente para realizar pruebas de interfaz de usuario (UI) y de API de diversos Sistemas bajo Test (SUT).
@@ -34,7 +37,3 @@ git checkout -b nombreDeTuRama
 ```
 5. Edita la linea 30 del archivo CI-sanity con el path de tu test.
 
-
-### Status CI
-
-[![My CI Regression](https://github.com/rafo18/portfolio/actions/workflows/CI-Regression.yml/badge.svg)](https://github.com/rafo18/portfolio/actions/workflows/CI-Regression.yml)
